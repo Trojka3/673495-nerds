@@ -7,14 +7,14 @@
   <body>
 	<header class="main-header">
 		<nav class="main-navi">
-			<a class="main-header-logo">
+			<a class="main-header-logo" href="index.html">
 				<img src="img/index-logo.svg" width="" height="" alt="Логотип студии дизайна Nerds">
 			</a>
 			<ul class="main-navi">
-				<li><a href="about.html">Студия</a></li>
-				<li><a href="clients.html">Клиенты</a></li>
-				<li><a href="shop.html">Магазин</a></li>
-				<li><a href="contacts.html">Контакты</a></li>
+				<li><a href="index.html">Студия</a></li>
+				<li><a href="index.html">Клиенты</a></li>
+				<li><a href="catalog.html">Магазин</a></li>
+				<li><a href="index.html">Контакты</a></li>
 			</ul>
 			<a href="cart.html">Корзина
 			</a>	
@@ -22,27 +22,54 @@
 	</header>
 	<main class="container">
 		<h1>Магазин готовых шаблонов</h1>
-		<section>
-			<div class="price-sort">
-			</div>
-			<div class="grid">
+		<form action="https://echo.htmlacademy.ru" method="get" name="catalog">
+			<!--<fieldset class="price">
+				<legend>Стоимость:</legend>
+				<input type="range">
+			</fieldset> -->
+			<fieldset class="grid">
+				<legend>Сетка:</legend>
 				<ul>
-					<li><a href="">Адаптивная</a></li>
-					<li><a href="">Фиксированная</a></li>
-					<li><a href="">Резиновая</a></li>
+					<li>
+						<input type="radio" name="grid" value="grid-adaptive" id="grid-adaptive" checked>
+						<label for="grid-adaptive">Адаптивная</label>
+					</li>
+					<li>
+						<input type="radio" name="grid" value="grid-fixed" id="grid-fixed">
+						<label for="grid-fixed">Фиксированная</label>
+					</li>
+					<li>
+						<input type="radio" name="grid" value="grid-rubber" id="grid-rubber">
+						<label for="grid-rubber">Резиновая</label>
+					</li>
 				</ul>	
-			</div>
-			<div class="feature">
+			</fieldset>
+			<fieldset class="feature">
+				<legend>Особенности:</legend>
 				<ul>
-					<li><a href="">Слайдер</a></li>
-					<li><a href="">Блок преимуществ</a></li>
-					<li><a href="">Новости</a></li>
-					<li><a href="">Галерея</a></li>
-					<li><a href="">Корзина</a></li>
+					<li>
+						<input type="checkbox" name="feature-slider" id="feature-slider" checked><label for="feature-slider">Слайдер</label>
+					</li>
+					<li>
+						<input type="checkbox" name="feature-advantage" id="feature-advantage">
+						<label for="feature-advantage">Блок преимуществ</label>
+					</li>
+					<li>
+						<input type="checkbox" name="feature-news" id="feature-news" checked>
+						<label for="feature-news">Новости</label>
+					</li>
+					<li>
+						<input type="checkbox" name="feature-gallery" id="feature-gallery">
+						<label for="feature-gallery">Галерея</label>
+					</li>
+					<li>
+						<input type="checkbox" name="feature-bin" id="feature-bin">
+						<label for="feature-bin">Корзина</label>
+					</li>
 				</ul>
-			</div>
-			<button class="button-show">Показать</button>
-		</section>
+			</fieldset>
+			<button type="submit" class="button-show">Показать</button>
+		</form>
 		<section class="shop">
 			<!--<div class="sort">
 				<ul>
@@ -56,32 +83,32 @@
 			<div>
 				<ul>
 					<li>
-						<a href="">
+						<a href="#">
 							<img src="img/img-sedona.jpg" height="576" weidth="360" alt="Sedona">
 						</a>
 					</li>
 					<li>
-						<a href="">
+						<a href="#">
 							<img src="img/img-pink.jpg" height="576" weidth="360" alt="Pink">
 						</a>
 					</li>
 					<li>
-						<a href="">
+						<a href="#">
 							<img src="img/img-barbershop.jpg" height="576" weidth="360" alt="Borodinski">
 						</a>
 					</li>
 					<li>
-						<a href="">
+						<a href="#">
 							<img src="img/img-Mishka.jpg" height="576" weidth="360" alt="Mishka">
 						</a>
 					</li>
 					<li>
-						<a href="">
+						<a href="#">
 							<img src="img/img-aplus.jpg" height="576" weidth="360" alt="Aplus">
 						</a>
 					</li>
 					<li>
-						<a href="">
+						<a href="#">
 							<img src="img/img-Kvast.jpg" height="576" weidth="360" alt="Kvast">
 						</a>
 					</li>
@@ -105,7 +132,7 @@
 				<br>
 				тел. +7 (812) 275-75-75
 			</p>
-			<a class="button" href="about.html"></a>	
+			<a class="button" href="#">Напишите нам</a>	
 		</div>
 		<div class="social-button">
 			<ul>
@@ -127,5 +154,23 @@
 			<span>Скидка 10% для друзей из социальных сетей.</span>
 		</p>
 	</footer>
+	<form action="https://echo.htmlacademy.ru" method="get" name="write-us">
+		<legend>Напишите нам</legend>
+		<div>
+			<label for="name">Ваше имя:</label>
+			<input type="text" id="name" name="name" placeholder="Имя Фамилия" required>
+		</div>
+		<div>
+			<label for="email">Ваш e-mail:</label>
+			<input type="email" id="email" name="email" placeholder="email@example.com" required>
+		</div>
+		<div>
+			<label for="letter">Текст письма:</label>
+			<textarea name="letter" id="letter" row="3" required>В свободной форме
+			</textarea>
+		</div>
+		<input type="submit" name="submit" value="Отправить">
+		<button type="button" name="close" area-label="Закрыть форму"></button>
+	</form>
   </body>
 </html>
