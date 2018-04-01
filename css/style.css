@@ -1,0 +1,203 @@
+﻿body {
+	margin: 0;
+	padding: 0;
+
+	font-family: Roboto, Arial, sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+	color: #000000;
+
+	background-color: #ffffff;
+}
+
+a {
+	text-decoration: none;
+}
+
+.main-navi {
+	font-size: 16px;
+	line-height: 30px;
+	font-weight: 500;
+	color: #000000;
+	text-transform: uppercase;
+
+	background-color: #eeeeee;
+	list-style: none;
+}
+
+.main-navi a {
+	color: black;
+}
+
+.main-navi a:hover {
+	color: #fb565a;
+}
+
+.main-navi a:active {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+/*.main-header::after {
+	background: url("/img/cart-icon.svg");
+	background-size: 15px auto;*/
+}
+
+.slider {
+	background-color: #eeeeee;
+}
+
+.products h3 {
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.products p {
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+	color: #283136;
+}
+
+.button {
+	font: inherit;
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 500;
+	color: #ffffff;	
+	vertical-align: middle;
+	text-transform: uppercase;
+
+	background-color: #fb565a;
+}
+
+.button:hover {
+	background-color: #e74246;
+}
+
+.button:active {
+	color: rgb(255, 255, 255 ,0.3);
+	background-color: #d7373b; 
+	box-shadow: inset 0 3px 3px 0 rgba(0, 1, 1, 0.1);
+}
+
+.button-green {
+	background-color: #00ca74;	
+}
+
+.button-green:hover {
+	background-color: #00bc6c;
+}
+
+.button-green:active {
+	color: rgb(255, 255, 255 ,0.3);
+	background-color: #d7373b; 
+	box-shadow: inset 0 3px 3px 0 rgba(0, 1, 1, 0.1);
+}
+.button-yellow {
+	background-color: #efc84a;	
+}
+
+.about-us b {
+	font-size: 45px;
+	line-height: 45px;
+	font-weight: 500;
+}
+
+.about-us p {
+	color: #283136;
+}
+
+.about-us h3 {
+	font-weight: 700;
+	text-transform: uppercase;	
+}
+
+.about-us ul{
+	color: #283136;
+	list-style: none;
+}
+
+.about-us tr:first-child {
+	font-size: 45px;
+	line-height: 10.06px;
+	font-weight: 700;
+}
+
+.about-us tr:last-child {
+	line-height: 18px;
+	color: #283136;
+}
+
+/*.partners {
+	opacity: 20%;
+}*/
+.contacts b{
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: 700;
+}
+
+.contacts p {
+	line-height: 18px;
+	color: #283136;
+}
+
+.social-button li {
+	list-style: none;	
+}
+
+.vk {
+	background-color: #e1e1e1;
+	height: 50px;
+	border-radius: 50%;
+}
+
+.discount {
+	font-size: 36px;
+	line-height: 36px;
+	font-weight: 700;
+}
+
+.discount span{
+	font-size: 16px;
+	line-height: 22px;
+	color: #444444;
+}
+
+.write-us {
+	font-size: 45px;
+	line-height: 45px;
+	font-weight: 500;
+}
+
+label {
+	line-height: 18px;
+	font-weight: 700;
+}
+
+form button {
+	font: inherit;
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 500;
+	color: #ffffff;	
+	vertical-align: middle;
+	text-transform: uppercase;
+
+	background-color: #fb565a;
+}
+
+.button:hover {
+	background-color: #e74246;
+}
+
+.button:active {
+	color: rgb(255, 255, 255 ,0.3);
+	background-color: #d7373b; 
+	box-shadow: inset 0 3px 3px 0 rgba(0, 1, 1, 0.1);
+}
+
+}

@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Дизайн-студия "Нёрдс"</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 	<header class="main-header">
@@ -16,7 +19,7 @@
 				<li><a href="catalog.html">Магазин</a></li>
 				<li><a href="index.html">Контакты</a></li>
 			</ul>
-			<a href="cart.html">Корзина
+			<a href="cart.html" class="cart">Корзина
 			</a>	
 		</nav>
 	</header>
@@ -59,7 +62,7 @@
 				<li>слайдшоу и видео для корпоративных презентаций</li>
 			</ul>
 			<img src="img/about-us-logo.png" width="360" height="208" alt="Логотип студии дизайна Nerds">
-			<p>С 2004 года любим точность во всем:</p>
+			<h3>С 2004 года любим точность во всем:</h3>
 			<table>
 				<tr>
 					<td>146<span>%</span></td>
@@ -109,17 +112,17 @@
 		<div class="social-button">
 			<ul>
 				<li>
-					<a class="social-button" href="#" area-label="Вконтакте">
+					<a class="social-button vk" href="#" area-label="Вконтакте">
 						<img src="img/vk-icon.svg" height="15" width="26"  alt="Вконтакте">
 					</a>
 				</li>
 				<li>
-					<a class="social-button" href="#" area-label="Фейсбук">
+					<a class="social-button fb" href="#" area-label="Фейсбук">
 						<img src="img/fb-icon.svg" height="22" width="12" alt="Фейсбук">
 					</a>
 				</li>
 				<li>
-					<a class="social-button" href="#" area-label="Инстаграм">
+					<a class="social-button inst" href="#" area-label="Инстаграм">
 						<img src="img/insta-icon.svg" height="21" width="21" alt="Инстаграм">
 					</a>
 				</li>
@@ -145,7 +148,7 @@
 			<textarea name="letter" id="letter" rows="3" required>В свободной форме
 			</textarea>
 		</div>
-		<input type="submit" name="submit" value="Отправить">
+		<input type="submit" name="submit" value="Отправить" class="button">
 		<button type="button" name="close" area-label="Закрыть форму"></button>
 	</form>
   </body>
