@@ -59,7 +59,7 @@
 			<ul>
 				<li>Веб-сайтов любой сложности</li>
 				<li>Мобильных приложений для iOS и Android</li>
-				<li>слайдшоу и видео для корпоративных презентаций</li>
+				<li>Слайдшоу и видео для корпоративных презентаций</li>
 			</ul>
 			<img src="img/about-us-logo.png" width="360" height="208" alt="Логотип студии дизайна Nerds">
 			<h3>С 2004 года любим точность во всем:</h3>
@@ -78,16 +78,16 @@
 		</section>
 		<section class="partners">
 			<h2 class="visually-hidden">Партнеры</h2>
-			<a class="partners htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss">
+			<a class="partner htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss">
 				<img src="img/htmlacademy.png" width="199" height="68" alt="HTML Academy">
 			</a>
-			<a class="partners borodinski" href="https://htmlacademy.ru/">
+			<a class="partner borodinski" href="https://htmlacademy.ru/">
 				<img src="img/borodinski.png" width="209" height="90" alt="Barbershop Borodinski">
 			</a>
-			<a class="partners pink" href="https://htmlacademy.ru/">
+			<a class="partner pink" href="https://htmlacademy.ru/">
 				<img src="img/pink.png" width="185" height="52" alt="Pink">
 			</a>
-			<a class="partners mishka" href="https://htmlacademy.ru/">
+			<a class="partner mishka" href="https://htmlacademy.ru/">
 				<img src="img/mishka.png" width="173" height="84" alt="Mishka">
 			</a>
 		</section>
@@ -109,9 +109,9 @@
 			</p>
 			<a class="button contacts-button" href="#">Напишите нам</a>	
 		</div>
-		<div class="social-button">
+		<div class="social-buttons">
 			<ul>
-				<li>
+				<li class="s-b">
 					<a class="social-button vk" href="#" area-label="Вконтакте">
 						<img src="img/vk-icon.svg" height="15" width="26"  alt="Вконтакте">
 					</a>
@@ -145,11 +145,12 @@
 		</div>
 		<div>
 			<label for="letter">Текст письма:</label>
-			<textarea name="letter" id="letter" rows="3" required>В свободной форме
-			</textarea>
+			<textarea name="letter" id="letter" rows="3" placeholder="В свободной форме" required></textarea>
 		</div>
 		<input type="submit" name="submit" value="Отправить" class="button">
-		<button type="button" name="close" area-label="Закрыть форму"></button>
+		<button type="button" name="close" area-label="Закрыть форму" class="button-x">
+			<img src="img/close-cross.svg" height="21" width="21" alt="close-cross">
+		</button>
 	</form>
   </body>
 </html>
