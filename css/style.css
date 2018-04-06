@@ -1,13 +1,11 @@
 ﻿body {
 	margin: 0;
 	padding: 0;
-
 	font-family: Roboto, Arial, sans-serif;
 	font-size: 16px;
 	line-height: 24px;
 	font-weight: 400;
 	color: #000000;
-
 	background-color: #ffffff;
 }
 
@@ -43,7 +41,7 @@ a {
 }
 
 /*.main-header::after {
-	background: url("/img/cart-icon.svg");
+	background: url("../img/cart-icon.svg");
 	background-size: 15px auto;*/
 }
 
@@ -73,7 +71,6 @@ a {
 	color: #ffffff;	
 	vertical-align: middle;
 	text-transform: uppercase;
-
 	background-color: #fb565a;
 }
 
@@ -216,7 +213,7 @@ label {
 	font-weight: 700;
 }
 
-form .button {
+.write-us-form .button {
 	font: inherit;
 	font-size: 16px;
 	line-height: 18px;
@@ -229,32 +226,32 @@ form .button {
 	outline: none;
 }
 
-form .button:hover,
-form .button:focus {
+.write-us-form .button:hover,
+.write-us-form .button:focus {
 	outline: none;
 	text-decoration: none;
 	background-color: #e74246;
 }
 
-form .button:active {
+.write-us-form .button:active {
 	color: rgb(255, 255, 255 ,0.3);
 	background-color: #d7373b; 
 	box-shadow: inset 0 3px 3px 0 rgba(0, 1, 1, 0.1);
 }
 
-form .button-x {
+.write-us-form .button-x {
 	opacity: 0.3;
 	background-color: white;
 	border: none;
 }
 
-form .button-x:hover,
-form .button-x:focus {
+.write-us-form .button-x:hover,
+.write-us-form .button-x:focus {
 	outline: none;
 	opacity: 1;
 }
 
-form .button-x:active {
+.write-us-form .button-x:active {
 	outline: none;
 	opacity: 0.1;
 }
@@ -265,71 +262,59 @@ form textarea:invalid {
 	outline: 2px solid red;
 }
 */
-form input,
-form textarea {
+.write-us-form input,
+.write-us-form textarea {
 	border: none;
 	outline: 2px solid #d7dcde;
 	border-radius: 10 px; 
 }
 
-form input::placeholder,
-form textarea::placeholder {
+.write-us-form input::placeholder,
+.write-us-form textarea::placeholder {
 	color: rgba(68, 68, 68, 0.5);
 }
 
-form input::-ms-input-placeholder,
-form textarea::-ms-input-placeholder {
+.write-us-form input::-ms-input-placeholder,
+.write-us-form textarea::-ms-input-placeholder {
 	color: rgba(68, 68, 68, 0.5);
 }
 
-form input:-ms-input-placeholder,
-form textarea:-ms-input-placeholder {
+.write-us-form input:-ms-input-placeholder,
+.write-us-form textarea:-ms-input-placeholder {
 	color: rgba(68, 68, 68, 0.5);
 }
 
-form input:hover,
-form textarea:hover {
+.write-us-form input:hover,
+.write-us-form textarea:hover {
 	outline: 2px solid #b4b9bb;
 }
 
-/*form input:hover::placeholder {
-	color: rgba(68, 68, 68, 0.5);
-}
-
-form input:hover::-ms-input-placeholder {
-	color: rgba(68, 68, 68, 0.5);
-}
-
-form input:hover:-ms-input-placeholder {
-	color: rgba(68, 68, 68, 0.5);
-}*/
-
-form input:focus,
-form textarea:focus {
+.write-us-form input:focus,
+.write-us-form textarea:focus {
 	outline: 2px solid #000000;	
 } 
 
-form input:focus::placeholder,
-form textarea:focus::placeholder {
+.write-us-form input:focus::placeholder,
+.write-us-form textarea:focus::placeholder {
 	color: rgba(68, 68, 68, 1);
 }
 
-form input:focus::-ms-input-placeholder,
-form textarea:focus::-ms-input-placeholder {
+.write-us-form input:focus::-ms-input-placeholder,
+.write-us-form textarea:focus::-ms-input-placeholder {
 	color: rgba(68, 68, 68, 1);
 }
 
-form input:focus:-ms-input-placeholder,
-form textarea:focus:-ms-input-placeholder {
+.write-us-form input:focus:-ms-input-placeholder,
+.write-us-form textarea:focus:-ms-input-placeholder {
 	color: rgba(68, 68, 68, 1);
 }
 
-form textarea {
+.write-us-form textarea {
 	color: rgba(68, 68, 68, 0.5);
 	resize: none;		
 }
 
-form textarea:focus {
+.write-us-form textarea:focus {
 	color: rgba(68, 68, 68, 1);
 }
 
@@ -345,6 +330,11 @@ form textarea:focus {
 
 .main-header-logo:active {
 	opacity: 0.3;
+}
+
+.current {
+	padding-bottom: 13px;
+	border-bottom: 2px solid #fb565a;
 }
 
 h1 {
@@ -394,6 +384,42 @@ legend {
 	box-shadow: inset 0 3px 3px 0 rgba(0, 1, 1, 0.1);
 }
 
+fieldset {
+	border: 0;
+}
+
+.catalog-form input[type="radio"] {
+	display:none;
+}
+/*
+.grid label::before content: "";
+
+.grid img{
+	height: 25px;
+	width: 25px;
+	background-image: url("../img/radio-on.svg");
+	background-size: 25px 25px;
+}
+*/
+.grid label:hover,
+.grid label:active {
+	color: #000000;
+}
+/*
+.grid input[type="radio"]:hover,
+.grid input[type="radio"]:active {
+	opacity: 1;
+	color: #000000;
+}
+*/
+.grid label:disabled {
+ opacity: 0.3;
+} 
+
+.grid input[type="radio"]:disabled {
+ opacity: 0.3;
+}
+
 .on-img-text1 {
 	font-size: 18px;
 	line-height: 30px;
@@ -408,3 +434,13 @@ legend {
 	font-weight: 400;
 	color: #666666;
 }
+
+/*.about-us li::before {
+	content: " ";
+	position: absolute;
+	width: 25px;
+	height: 2px;
+	top: 11px;
+	left:0;
+	background-color: #fb565a;
+}*/
