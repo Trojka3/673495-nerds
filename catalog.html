@@ -21,7 +21,10 @@
                 <li><a href="catalog.html" class="current">Магазин</a></li>
                 <li><a href="index.html">Контакты</a></li>
             </ul>
-            <a href="cart.html">Корзина</a>
+            <div class="cart-block">
+            	<a href="cart.html" class="cart"><img src="img/cart-icon.svg" width="15" height="15" alt="Корзина" class="cart-icon">Корзина
+            	</a>
+        	</div>
         </nav>
     </header>
     <main class="container">
@@ -114,39 +117,41 @@
                 <img src="img/map.jpg" height="416" width="1440" alt="Карта офиса Б.Конюшенная, д. 19/8">
             </a>
         </section>
-        <div class="contacts">
+        <div class="contacts" id="contacts">
             <b>Nerds design studio</b>
             <p>
                 191186, Санкт-Петербург ул. Б.Конюшенная, д. 19.8 тел. +7 (812) 275-75-75
             </p>
             <a class="button contacts-button" href="#">Напишите нам</a>
         </div>
-        <div class="social-buttons">
-            <ul>
-                <li>
-                    <a class="social-button vk" href="#">
-                        <span class="visually-hidden">Вконтакте</span>
-                        <img src="img/vk-icon.svg" height="15" width="26"  alt="Вконтакте">
-                    </a>
-                </li>
-                <li>
-                    <a class="social-button fb" href="#">
-                        <span class="visually-hidden">Фейсбук</span>
-                        <img src="img/fb-icon.svg" height="22" width="12" alt="Фейсбук">
-                    </a>
-                </li>
-                <li>
-                    <a class="social-button inst" href="#">
-                        <span class="visually-hidden">Инстаграм</span>
-                        <img src="img/insta-icon.svg" height="21" width="21" alt="Инстаграм">
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <p class="discount">
-            <b>Давайте дружить, это выгодно!</b>
-            <span>Скидка 10% для друзей из социальных сетей.</span>
-        </p>
+        <div class="footer-bottom">
+	        <div class="social-buttons">
+	            <ul>
+	                <li>
+	                    <a class="social-button vk" href="#">
+	                        <span class="visually-hidden">Вконтакте</span>
+	                        <img src="img/vk-icon.svg" height="15" width="26"  alt="Вконтакте">
+	                    </a>
+	                </li>
+	                <li>
+	                    <a class="social-button fb" href="#">
+	                        <span class="visually-hidden">Фейсбук</span>
+	                        <img src="img/fb-icon.svg" height="22" width="12" alt="Фейсбук">
+	                    </a>
+	                </li>
+	                <li>
+	                    <a class="social-button inst" href="#">
+	                        <span class="visually-hidden">Инстаграм</span>
+	                        <img src="img/insta-icon.svg" height="21" width="21" alt="Инстаграм">
+	                    </a>
+	                </li>
+	            </ul>
+	        </div>
+	        <p class="discount">
+	            <b>Давайте дружить, это выгодно!</b>
+	            <span>Скидка 10% для друзей из социальных сетей.</span>
+	        </p>
+	    </div>
     </footer>
     <form action="https://echo.htmlacademy.ru" method="get" name="write-us" class="write-us-form">
         <h2 class="write-us">Напишите нам</h2>

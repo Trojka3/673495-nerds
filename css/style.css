@@ -55,20 +55,18 @@
  .header-navi a:active {
      color: rgba(0, 0, 0, 0.3);
 }
-/*.header-navi::after {
-     background-image: url("../img/cart-icon.svg");
-     background-repeat: no-repeat;
-}*/
 
  .sliders {
+     outline: 2px solid red;
      position: relative;
-     margin-bottom: 30px;
+     min-height: 425px;
+     margin-bottom: 80px;
      /*background-color: #eeeeee;*/
 }
  .container {
      width: 1200px;
      margin: 0 auto;
-     padding: 0 20px;
+     padding: 0;
      box-sizing: border-box;
 }
  .slider-controls {
@@ -110,7 +108,7 @@
  .slider h2 {
      max-width: 600px;
      margin: 0;
-     margin-bottom: 27px;
+     margin-bottom: 7px;
      font-size: 55px;
      line-height: 55px;
      font-weight: 500;
@@ -123,17 +121,17 @@
 }
  .slider {
      display: none;
-     padding: 78px 0 80px 0;
+     padding: 78px 0 0px 0;
 }
  .slider:nth-child(1) {
      background-image: url("../img/slide1.png");
      background-repeat: no-repeat;
-     background-position: 93% 18px;
+     background-position: right 10px;
 }
  .slider:nth-child(2) {
      background-image: url("../img/slide2.png");
      background-repeat: no-repeat;
-     background-position: 93% 18px;
+     background-position: 100% 18px;
 }
  .slider:nth-child(3) {
      background-image: url("../img/slide3.png");
@@ -273,7 +271,7 @@
  .partner img:active {
      opacity: 0.1;
 }
- .contacts b{
+ .contacts b {
      font-size: 18px;
      line-height: 30px;
      font-weight: 700;
@@ -287,25 +285,28 @@
 }
  .social-button {
      background-color: #e1e1e1;
-    /*border-radius: 50%;
-     */
 }
  .social-button:hover, .social-button:focus {
      background-color: #e74246;
 }
  .social-button:active {
-     opacity: 0.3;
      background-color: #d7373b;
      box-shadow: inset 0 3px 3px 0 rgba(0, 1, 1, 0.1);
+}
+ .social-button:active img {
+     opacity: 0.3;
 }
  .discount {
      font-size: 36px;
      line-height: 36px;
      font-weight: 700;
+     line-height: 0.9;
 }
- .discount span{
+ .discount span {
+     
      font-size: 16px;
      line-height: 22px;
+     font-weight: 400;
      color: #444444;
 }
  .write-us {
@@ -509,22 +510,23 @@
      background-size: 1440px 2476px;
      background-repeat: no-repeat;
      background-position: top center;
- }
+ */}
  .header-navi {
      padding: 0;
      margin: 0;
-     min-height: 135px; /*временно для сетки*/
+     min-height: 65px;
      width: 1160px;
      display: flex;
      justify-content:space-between;
      align-items: center;
-     margin-bottom: 15px;
-     padding-top: 22px;
+     margin-top: 57px;
+     outline: 2px solid green;
 }
  .main-header-logo {
      width: 160px;
      height: 65px;
      margin-top: -12px;   
+     outline: 2px solid green;
 }
 .main-navi {
      padding: 0;
@@ -533,16 +535,30 @@
      width: 440px;
      justify-content: space-between;
      list-style: none;
+     outline: 2px solid green;
 }
 
-.cart {
+.cart-block {
+     outline: 2px solid black;
      padding: 0;
      margin: 0;
      width: 160px;
      text-align: right;
-     background-image: url("../img/cart-icon.svg");
+    /* background-image: url("../img/cart-icon.svg");
      background-repeat: no-repeat;
      background-position: left center;
+*/}
+/*.header-navi div::after {
+     content: "";
+     height: 15px;
+     width: 15px;
+     background-image: url("../img/cart-icon.svg");
+     background-repeat: no-repeat;
+     outline: 2px solid red;
+}
+*/
+.cart-icon {
+     margin-right: 25px; 
 }
 
 .products {
@@ -550,15 +566,19 @@
      margin: 0;
      display: flex;
      width: 1100px;
+     flex-direction: row;
      justify-content: space-between;
+     min-height: 350px;
+     margin-bottom: 80px;
+     outline: 2px solid black;
 }
 
 .product {
+     outline: 2px solid blue;
      width: 300px;
      display: flex;
      flex-direction: column;
-     margin-bottom: 80px;
-     min-height: 350px;
+     min-height: 0px;
 }
 
 .products img{
@@ -568,17 +588,49 @@
 .products p {
      width: 260px;
      margin-bottom: 30px;
-     outline: 2px solid black; 
+     outline: 2px solid black; /*временно для сетки*/
 }
 
 .products h3 {
-     outline: 2px solid green; 
+     outline: 2px solid green; /*временно для сетки*/
      margin-bottom: 0px;
 }
 
 .product .button {
+     display: flex;
      width: 160px;
      min-height: 50px;
-     text-align: center;
-      
+     justify-content: center;
+     align-items: center;
+}
+
+.footer-bottom {
+     margin-top: 105px; /*временно*/
+     display: flex;
+
+     align-items: center;
+     outline: 2px solid black;
+
+}
+.social-buttons ul {
+     display: flex;
+     justify-content: space-between;
+     padding: 0;
+     width: 260px;
+     margin-right: 140px;
+     outline: 2px solid black;
+}
+.social-button {
+     display: flex;
+     justify-content: center;
+     outline: 2px solid black;
+     width: 80px; 
+     height: 80px;
+     border-radius: 40px;
+     border: none;
+}
+.discount {
+     padding-top: 3px;
+     width: 560px;
+     outline: 2px solid green;
 }
