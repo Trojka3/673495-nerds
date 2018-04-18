@@ -11,7 +11,7 @@
 
 <body>
     <header class="main-header">
-        <nav class="header-navi">
+          <nav class="header-navi">
             <a class="main-header-logo" href="index.html">
                 <img src="img/index-logo.svg" width="160" height="65" alt="Логотип студии дизайна Nerds">
             </a>
@@ -22,100 +22,104 @@
                 <li><a href="index.html">Контакты</a></li>
             </ul>
             <div class="cart-block">
-            	<a href="cart.html" class="cart"><img src="img/cart-icon.svg" width="15" height="15" alt="Корзина" class="cart-icon">Корзина
-            	</a>
-        	</div>
+                <a href="cart.html" class="cart"><img src="img/cart-icon.svg" width="15" height="15" alt="Корзина" class="cart-icon">Корзина
+              </a>
+            </div>
         </nav>
     </header>
-    <main class="container">
+    <main class="catalog-main">
         <h1>Магазин готовых шаблонов</h1>
-        <form action="https://echo.htmlacademy.ru" method="get" name="catalog" class="catalog-form">
-            <!--<fieldset class="price">
-					<legend>Стоимость:</legend>
-					<input type="range">
-				</fieldset> -->
-            <fieldset class="grid">
-                <legend>Сетка:</legend>
-                <input type="radio" name="grid" value="grid-adaptive" id="grid-adaptive" checked>
-                <label for="grid-adaptive">Адаптивная</label>
-                <input type="radio" name="grid" value="grid-fixed" id="grid-fixed">
-                <label for="grid-fixed">Фиксированная</label>
-                <input type="radio" name="grid" value="grid-rubber" id="grid-rubber">
-                <label for="grid-rubber">Резиновая</label>
-            </fieldset>
-            <fieldset class="feature">
-                <legend>Особенности:</legend>
-                <input type="checkbox" name="feature" value="feature-slider" id="feature-slider" checked>
-                <label for="feature-slider">Слайдер</label>
-                <input type="checkbox" name="feature" value="feature-advantage" id="feature-advantage">
-                <label for="feature-advantage">Блок преимуществ</label>
-                <input type="checkbox" name="feature" value="feature-news" id="feature-news" checked>
-                <label for="feature-news">Новости</label>
-                <input type="checkbox" name="feature" value="feature-gallery" id="feature-gallery">
-                <label for="feature-gallery">Галерея</label>
-                <input type="checkbox" name="feature" value="feature-bin" id="feature-bin">
-                <label for="feature-bin">Корзина</label>
-            </fieldset>
-            <button type="submit" class="button-show">Показать</button>
-        </form>
-        <section class="shop">
-            <h2 class="visually-hidden">Магазин</h2>
-            <!--<div class="sort">
-					<ul>
-						<li><a href="">По цене</a></li>
-						<li><a href="">По типу</a></li>
-						<li><a href="">По названию</a></li>
-						<li><a href="">Вверх</a></li>
-						<li><a href="">Вниз</a></li>
-					</ul>
-				</div>-->
-            <div>
-                <ul>
-                    <li class="sedona">
-                        <img src="img/browser.svg" class="browser" height="40" width="360" alt="browser">
-                        <img src="img/img-sedona.jpg" height="576" width="360" alt="Sedona">
-                        <div class="on-img">
-                            <a href="sedona.html" class="on-img-discription1">Sedona</a>
-                            <span class="on-img-discription2">Информационный сайт  для туристов</span>
-                            <a href="sedona.html" class="button on-img-button">9 900 руб.</a>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="img/img-pink.jpg" height="576" width="360" alt="Pink">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="img/img-barbershop.jpg" height="576" width="360" alt="Borodinski">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="img/img-mishka.jpg" height="576" width="360" alt="Mishka">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="img/img-aplus.jpg" height="576" width="360" alt="Aplus">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="img/img-kvast.jpg" height="576" width="360" alt="Kvast">
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <!--<div>Номера страниц</div>-->
-        </section>
+        <div class="catalog-container">
+            <form action="https://echo.htmlacademy.ru" method="get" name="catalog" class="catalog-form">
+                <fieldset class="price">
+                    <legend>Стоимость:</legend>
+                    <input type="range">
+                </fieldset>
+                <fieldset class="grid">
+                    <legend>Сетка:</legend>
+                    <input type="radio" name="grid" value="grid-adaptive" id="grid-adaptive" checked>
+                    <label for="grid-adaptive">Адаптивная</label>
+                    <input type="radio" name="grid" value="grid-fixed" id="grid-fixed">
+                    <label for="grid-fixed">Фиксированная</label>
+                    <input type="radio" name="grid" value="grid-rubber" id="grid-rubber">
+                    <label for="grid-rubber">Резиновая</label>
+                </fieldset>
+                <fieldset class="feature">
+                    <legend>Особенности:</legend>
+                    <input type="checkbox" name="feature" value="feature-slider" id="feature-slider" checked>
+                    <label for="feature-slider">Слайдер</label>
+                    <input type="checkbox" name="feature" value="feature-advantage" id="feature-advantage">
+                    <label for="feature-advantage">Блок преимуществ</label>
+                    <input type="checkbox" name="feature" value="feature-news" id="feature-news" checked>
+                    <label for="feature-news">Новости</label>
+                    <input type="checkbox" name="feature" value="feature-gallery" id="feature-gallery">
+                    <label for="feature-gallery">Галерея</label>
+                    <input type="checkbox" name="feature" value="feature-bin" id="feature-bin">
+                    <label for="feature-bin">Корзина</label>
+                </fieldset>
+                <button type="submit" class=" button button-show">Показать</button>
+            </form>
+            <section class="shop">
+                <h2 class="visually-hidden">Магазин</h2>
+                <div class="sort">
+                    <!--<ul>
+              <li><a href="">По цене</a></li>
+              <li><a href="">По типу</a></li>
+              <li><a href="">По названию</a></li>
+              <li><a href="">Вверх</a></li>
+              <li><a href="">Вниз</a></li>
+            </ul>-->
+                </div>
+                <div class="labels">
+                    <ul class="labels-list">
+                        <li class="sedona">
+                            <img src="img/browser.svg" class="browser" height="40" width="360" alt="browser">
+                            <img src="img/img-sedona.jpg" class="label-image" height="576" width="360" alt="Sedona">
+                            <div class="on-img">
+                                <a href="sedona.html" class="on-img-discription1">Sedona</a>
+                                <span class="on-img-discription2">Информационный сайт  для туристов</span>
+                                <a href="sedona.html" class="button on-img-button">9 900 руб.</a>
+                            </div>
+                        </li>
+                        <li>
+                          <img src="img/browser.svg" class="browser" height="40" width="360" alt="browser">
+                          <img src="img/img-pink.jpg" class="label-image" height="576" width="360" alt="Pink">
+                            <div class="on-img">
+                              <a href="sedona.html" class="on-img-discription1">Pink App</a>
+                              <span class="on-img-discription2">Продуктовый лендинг приложения для iOS и Android</span>
+                              <a href="pink.html" class="button on-img-button">9 900 руб.</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/browser.svg" class="browser" height="40" width="360" alt="browser">
+                            <img src="img/img-barbershop.jpg" class="label-image" height="576" width="360" alt="Borodinski">
+                        </li>
+                        <li>
+                          <img src="img/browser.svg" class="browser" height="40" width="360" alt="browser">
+                          <img src="img/img-mishka.jpg" class="label-image" height="576" width="360" alt="Mishka">
+                       </li>
+                        <li>
+                          <img src="img/browser.svg" class="browser" height="40" width="360" alt="browser">
+                          <img src="img/img-aplus.jpg" class="label-image" height="576" width="360" alt="Aplus">
+                        </li>
+                        <li>
+                          <img src="img/browser.svg" class="browser" height="40" width="360" alt="browser">
+                          <img src="img/img-kvast.jpg" class="label-image" height="576" width="360" alt="Kvast">
+                        </li>
+                    </ul>
+                </div>
+                <div class="page-numbers">
+                  Номера страниц-->
+                </div>
+            </section>
+        </div>
     </main>
     <footer class="main-footer">
         <section class="map">
             <h2 class="visually-hidden">Карта</h2>
             <a href="map.html">
-                <img src="img/map.jpg" height="416" width="1440" alt="Карта офиса Б.Конюшенная, д. 19/8">
-            </a>
+                  <img src="img/map.jpg" height="416" width="1440" alt="Карта офиса Б.Конюшенная, д. 19/8">
+              </a>
         </section>
         <div class="contacts" id="contacts">
             <b>Nerds design studio</b>
@@ -125,33 +129,33 @@
             <a class="button contacts-button" href="#">Напишите нам</a>
         </div>
         <div class="footer-bottom">
-	        <div class="social-buttons">
-	            <ul>
-	                <li>
-	                    <a class="social-button vk" href="#">
-	                        <span class="visually-hidden">Вконтакте</span>
-	                        <img src="img/vk-icon.svg" height="15" width="26"  alt="Вконтакте">
-	                    </a>
-	                </li>
-	                <li>
-	                    <a class="social-button fb" href="#">
-	                        <span class="visually-hidden">Фейсбук</span>
-	                        <img src="img/fb-icon.svg" height="22" width="12" alt="Фейсбук">
-	                    </a>
-	                </li>
-	                <li>
-	                    <a class="social-button inst" href="#">
-	                        <span class="visually-hidden">Инстаграм</span>
-	                        <img src="img/insta-icon.svg" height="21" width="21" alt="Инстаграм">
-	                    </a>
-	                </li>
-	            </ul>
-	        </div>
-	        <p class="discount">
-	            <b>Давайте дружить, это выгодно!</b>
-	            <span>Скидка 10% для друзей из социальных сетей.</span>
-	        </p>
-	    </div>
+            <div class="social-buttons">
+                <ul>
+                    <li>
+                        <a class="social-button vk" href="#">
+                            <span class="visually-hidden">Вконтакте</span>
+                            <img src="img/vk-icon.svg" height="15" width="26"  alt="Вконтакте">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="social-button fb" href="#">
+                            <span class="visually-hidden">Фейсбук</span>
+                            <img src="img/fb-icon.svg" height="22" width="12" alt="Фейсбук">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="social-button inst" href="#">
+                            <span class="visually-hidden">Инстаграм</span>
+                            <img src="img/insta-icon.svg" height="21" width="21" alt="Инстаграм">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <p class="discount">
+                <b>Давайте дружить, это выгодно!</b>
+                <span>Скидка 10% для друзей из социальных сетей.</span>
+            </p>
+        </div>
     </footer>
     <form action="https://echo.htmlacademy.ru" method="get" name="write-us" class="write-us-form">
         <h2 class="write-us">Напишите нам</h2>
