@@ -33,29 +33,64 @@
             <form action="https://echo.htmlacademy.ru" method="get" name="catalog" class="catalog-form">
                 <fieldset class="price">
                     <legend>Стоимость:</legend>
-                    <input type="range">
+                    <div class="range-filter">
+                      <div class="range-controls">
+                        <div class="scale">
+                          <div class="bar"></div>
+                        </div>
+                        <div class="toggle toggle-min">
+                          <img src="img/filter-button.svg" width="20" height="23">
+                        </div>
+                        <div class="toggle toggle-max">
+                          <img src="img/filter-button.svg" width="20" height="23">
+                        </div>
+                      </div>
+                      <div class="price-controls">
+                        <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                       <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+                      </div>
+                    </div>
                 </fieldset>
                 <fieldset class="grid">
-                    <legend>Сетка:</legend>
-                    <input type="radio" name="grid" value="grid-adaptive" id="grid-adaptive" checked>
-                    <label for="grid-adaptive">Адаптивная</label>
-                    <input type="radio" name="grid" value="grid-fixed" id="grid-fixed">
-                    <label for="grid-fixed">Фиксированная</label>
-                    <input type="radio" name="grid" value="grid-rubber" id="grid-rubber">
-                    <label for="grid-rubber">Резиновая</label>
+                  <legend>Сетка:</legend>
+                  <ul>
+                    <li class="grid-option">
+                      <input type="radio" class="visually-hidden grid-radio" name="grid" value="grid-adaptive" id="grid-adaptive" checked>
+                      <label for="grid-adaptive">Адаптивная</label>
+                   </li>
+                    <li class="grid-option">
+                      <input type="radio" class="visually-hidden grid-radio" name="grid" value="grid-fixed" id="grid-fixed">
+                      <label for="grid-fixed">Фиксированная</label>
+                    </li>
+                    <li class="grid-option">
+                      <input type="radio" class="visually-hidden grid-radio" name="grid" value="grid-rubber" id="grid-rubber">
+                      <label for="grid-rubber">Резиновая</label>
+                    </li>
+                  </ul>
                 </fieldset>
                 <fieldset class="feature">
                     <legend>Особенности:</legend>
-                    <input type="checkbox" name="feature" value="feature-slider" id="feature-slider" checked>
-                    <label for="feature-slider">Слайдер</label>
-                    <input type="checkbox" name="feature" value="feature-advantage" id="feature-advantage">
-                    <label for="feature-advantage">Блок преимуществ</label>
-                    <input type="checkbox" name="feature" value="feature-news" id="feature-news" checked>
-                    <label for="feature-news">Новости</label>
-                    <input type="checkbox" name="feature" value="feature-gallery" id="feature-gallery">
-                    <label for="feature-gallery">Галерея</label>
-                    <input type="checkbox" name="feature" value="feature-bin" id="feature-bin">
-                    <label for="feature-bin">Корзина</label>
+                    <ul>
+                      <li class="feature-option">
+                        <input type="checkbox" class="visually-hidden feature-checkbox" name="feature" value="feature-slider" id="feature-slider" checked>
+                        <label for="feature-slider">Слайдер</label>
+                      </li>
+                      <li class="feature-option">
+                        <input type="checkbox" class="visually-hidden feature-checkbox" name="feature" value="feature-advantage" id="feature-advantage">
+                        <label for="feature-advantage">Блок преимуществ</label>
+                      </li>
+                      <li class="feature-option">
+                        <input type="checkbox" class="visually-hidden feature-checkbox" name="feature" value="feature-news" id="feature-news" checked>
+                        <label for="feature-news">Новости</label>
+                      </li>
+                      <li class="feature-option">
+                        <input type="checkbox" class="visually-hidden feature-checkbox" name="feature" value="feature-gallery" id="feature-gallery">
+                        <label for="feature-gallery">Галерея</label>
+                      </li>
+                      <li class="feature-option">
+                        <input type="checkbox" class="visually-hidden feature-checkbox" name="feature" value="feature-bin" id="feature-bin">
+                        <label for="feature-bin">Корзина</label>
+                      </li>
                 </fieldset>
                 <button type="submit" class=" button button-show">Показать</button>
             </form>
@@ -68,7 +103,7 @@
               <li><a href="">По названию</a></li>
               <li><a href="">Вверх</a></li>
               <li><a href="">Вниз</a></li>
-            </ul>-->
+                        </ul>-->
                 </div>
                 <div class="labels">
                     <ul class="labels-list">
@@ -109,7 +144,7 @@
                     </ul>
                 </div>
                 <div class="page-numbers">
-                  Номера страниц-->
+                  Номера страниц
                 </div>
             </section>
         </div>
@@ -118,7 +153,7 @@
         <section class="map">
             <h2 class="visually-hidden">Карта</h2>
             <a href="map.html">
-                  <img src="img/map.jpg" height="416" width="1440" alt="Карта офиса Б.Конюшенная, д. 19/8">
+                  <img src="img/map.jpg" height="416" width="100%" alt="Карта офиса Б.Конюшенная, д. 19/8">
               </a>
         </section>
         <div class="contacts" id="contacts">
