@@ -294,51 +294,173 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 1160px;
   min-height: 527px;
+
   outline: 1px solid red;/*временно для сетки*/
 }
-.about-us b {
+.about-us::before {
+  content: "";
+  position: absolute;
+  width: 1160px;
+  height: 2px;
+  background-color: #eeeeee;
+}
+.about-us-discription {
+  display: flex;
+  flex-direction: column;
+  width: 660px;
+  margin-right: 140px;
+  outline: 1px solid yellow; /*временно для сетки*/
+}
+.about-us-discription b {
+  margin-top: 80px;
+  margin-bottom: 29px;
+
   font-weight: 500;
   font-size: 45px;
   line-height: 45px;
+  outline: 1px solid yellow;  /*временно для сетки*/
 }
-.about-us p {
+.about-us-discription p {
+  margin: 0;
+  margin-bottom: 22px;
   color: #283136;
+  outline: 1px solid yellow;  /*временно для сетки*/
 }
-.about-us h3 {
+.about-us-discription h3 {
+  font-size: 16px;
+  line-height: 24px;
   font-weight: 700;
   text-transform: uppercase;
+  margin-bottom: 8px;
 }
-.about-us ul {
+.about-us-discription ul {
   list-style: none;
   color: #283136;
+  padding-left: 36px;
 }
-.about-us tr:first-child {
+.about-us-discription li {
+  position: relative;
+  margin-bottom: 24px;
+}
+.about-us-discription li::before {
+  content: " ";
+  position: absolute;
+  width: 25px;
+  height: 2px;
+  left: -35px;
+  top: 12px;
+
+  background-color: #fb565a;
+}
+.about-us-img-table {
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+  outline: 1px solid green;
+}
+.about-us-img-table img{
+  margin-top: 42px;
+  margin-bottom: 35px;
+}
+.about-us-img-table h3 {
+  margin: 0;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-left: 16px;
+  margin-bottom: 57px;
+}
+.about-us-img-table table {
+  width: 360px;
+  height: 100px;
+  padding: 0;
+  border: 0;
+}
+.about-us-img-table td {
+  text-align: left;
+  vertical-align: top;
+  padding-right: 17px;
+  height: 30px;
+}
+.about-us-img-table sup {
+  font-size: 27px;
+}
+.about-us-img-table tr:first-child {
   font-weight: 700;
   font-size: 45px;
   line-height: 10.06px;
 }
-.about-us tr:last-child {
+.about-us-img-table tr:last-child {
   line-height: 18px;
   color: #283136;
 }
 .partners {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  justify-content: space-between;
+  width: 1160px;
   min-height: 184px;
   margin-bottom: 80px;
+  outline: 1px solid yellow;  /*временно для сетки*/
 }
-.partner img {
+.partners::before {
+  content: "";
+  position: absolute;
+  width: 1160px;
+  height: 2px;
+  background-color: #eeeeee;
+}
+.partners::after {
+  content: "";
+  position: absolute;
+  width: 1160px;
+  height: 2px;
+  bottom: 0px;
+  background-color: #eeeeee;
+}
+.partners a {
+  display: flex;
+  width: 260px;
+  outline: 1px solid yellow;  /*временно для сетки*/
+}
+.partner{
   opacity: 0.2;
 }
-.partner img:hover,
-.partner img:focus {
+.partners img {
+  margin: auto;
+}
+.htmlacademy {
+  padding-top: 14px;
+}
+.mishka {
+  padding-top: 10px;
+}
+.partner:hover,
+.partner:focus {
   opacity: 1;
 }
-.partner img:active {
+.partner:active {
   opacity: 0.1;
 }
+.partner-line {
+  position: relative;
+  width: 40px;
+}
+.partner-line::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 52px;
+  top: 66px;
+  left: 19px;
+  background-color: #eeeeee;
+}
+
 .contacts b {
   font-weight: 700;
   font-size: 18px;
@@ -523,6 +645,20 @@ img {
   line-height: 55px;
 
   background-color: #eeeeee;
+  opacity: 0.4;  /*временно для сетки*/
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 1160px;
+  min-height: 223px;
+  margin: 0;
+  margin-bottom: 55px;
+  padding: 0;
+  padding-top: 60px;
+
+  text-align: center;
+
+  outline: 1px solid red; /*временно для сетки*/
 }
 .catalog-form legend {
   font-weight: 700;
@@ -575,15 +711,6 @@ fieldset {
   line-height: 18px;
   color: #666666;
 }
-/*.about-us li::before {
-     content: " ";
-     position: absolute;
-     width: 25px;
-     height: 2px;
-     top: 11px;
-     left:0;
-     background-color: #fb565a;
-}*/
 .header-navi {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -740,21 +867,6 @@ fieldset {
 
   outline: 1px solid green; /*временно для сетки*/
 }
-.catalog-main h1 {
-  display: block;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  width: 1160px;
-  min-height: 230px;
-  margin: 0;
-  margin-bottom: 60px;
-  padding: 0;
-  padding-top: 65px;
-
-  text-align: center;
-
-  outline: 1px solid red; /*временно для сетки*/
-}
 .catalog-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -779,7 +891,7 @@ fieldset {
 .price {
   min-height: 210px;
   margin: 0;
-  margin-bottom: 55px;
+  margin-bottom: 54px;
   padding: 0;
 
   outline: 1px solid red;/*временно для сетки*/
@@ -810,7 +922,7 @@ fieldset {
           justify-content: space-between;
   min-height: 225px;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 29px;
   padding: 0;
 
   outline: 1px solid brown;/*временно для сетки*/
@@ -837,7 +949,7 @@ fieldset {
   display: flex;
   width: 100%;
   min-height: 20px;
-  margin-bottom: 55px;
+  margin-bottom: 58px;
 
   outline: 1px solid black;/*временно для сетки*/
 }
@@ -942,7 +1054,7 @@ fieldset {
   margin-bottom: 60px;
 }
 .feature legend {
-  margin-bottom: 15px;
+  margin-bottom: 17px;
 }
 .feature ul {
   margin: 0;
@@ -951,7 +1063,7 @@ fieldset {
 }
 .feature-option {
   margin-bottom: 20px;
-  padding-left: 35px;
+  padding-left: 36px;
   outline: 1px solid red;/*временно для сетки*/
 }
 .catalog-form label {
@@ -976,19 +1088,19 @@ fieldset {
   background-repeat: no-repeat;
   background-position: 0 0;
   left: -35px;
-  bottom:0px;
+  bottom: -2px;
   opacity: 0.4;
 }
 .feature-checkbox:checked + label::after {
   content: "";
   position: absolute;
-  width: 23px;
+  width: 27px;
   height: 23px;
   background-image: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   left: -35px;
-  bottom:0px;
+  bottom: -2px;
   opacity: 0.4;
 }
 .feature-checkbox:checked + label::before {
@@ -1025,11 +1137,11 @@ opacity: 0;
 }
 .grid-option {
   margin-bottom: 20px;
-  padding-left: 35px;
+  padding-left: 36px;
   outline: 1px solid blue;/*временно для сетки*/
 }
 .grid legend {
-  margin-bottom: 13px;
+  margin-bottom: 15px;
 }
 .grid-option label {
   color: #283136;
@@ -1146,3 +1258,9 @@ opacity: 0;
   background-color: #ffffff;
   top: 55px;
 }
+/*body {
+  background-image: url("../img/nerds-index.jpg");
+  background-repeat: no-repeat;
+  background-position: center 0;
+}
+
