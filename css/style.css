@@ -513,6 +513,7 @@ img {
   padding-right: 100px;
   padding-top: 70px;
   box-shadow: 0 20px 40px 0 rgba(0, 1, 1, 0.75);
+  display: none;
 }
 .write-us-form {
   display: flex;
@@ -1302,15 +1303,48 @@ opacity: 0;
   min-height: 416px;
   width: 100%;
   margin-bottom: 69px;
+  opacity: 0.3;
 }
 .contacts {
   position: absolute;
-  width: 319px;
-  min-height: 308px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 320px;
+  min-height: 310px;
   background-color: #ffffff;
+  box-sizing: border-box;
   top: 55px;
+  padding-left: 50px;
+  outline: 1px solid red;
+  opacity: 0.4;
 }
-/*body {
+.contacts b {
+  margin: 0;
+  padding: 0;
+  color: #000000;
+  text-transform: uppercase;
+  margin-top: 48px;
+  margin-bottom: 23px;
+}
+.contacts p {
+  padding: 0;
+  margin:0;
+  width: 210px;
+  margin-bottom: 17px;
+}
+.contacts p:last-of-type {
+  margin-bottom: 38px;
+}
+.contacts-button {
+  display: flex;
+  width: 220px;
+  min-height: 50px;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+}
+body {
   background-image: url("../img/nerds-index.jpg");
   background-repeat: no-repeat;
   background-position: center 0;
