@@ -171,26 +171,30 @@
 	        </p>
 	    </div>
     </footer>
-    <form action="https://echo.htmlacademy.ru" method="get" name="write-us" class="write-us-form">
-        <h2 class="write-us">Напишите нам</h2>
-        <div>
+    <section class="write-us">
+      <form action="https://echo.htmlacademy.ru" method="get" name="write-us" class="write-us-form">
+        <h2 class="write-us-title">Напишите нам</h2>
+        <div class="write-us-top">
+          <div>
             <label for="name">Ваше имя:</label>
             <input type="text" id="name" name="name" placeholder="Имя Фамилия" required>
-        </div>
-        <div>
-            <label for="email">Ваш e-mail:</label>
-            <input type="email" id="email" name="email" placeholder="email@example.com" required>
+          </div>
+          <div>
+              <label for="email">Ваш e-mail:</label>
+              <input type="email" id="email" name="email" placeholder="email@example.com" required>
+          </div>
         </div>
         <div>
             <label for="letter">Текст письма:</label>
             <textarea name="letter" id="letter" rows="3" placeholder="В свободной форме" required></textarea>
         </div>
-        <input type="submit" name="submit" value="Отправить" class="button">
+        <input type="submit" name="submit" value="Отправить" class="button button-submit">
         <button type="button" name="close" class="button-x">
             <span class="visually-hidden">Закрыть форму</span>
             <img src="img/close-cross.svg" height="21" width="21" alt="close-cross">
         </button>
-    </form>
+      </form>
+    </section>
 </body>
 
 </html>
