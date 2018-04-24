@@ -801,7 +801,7 @@ fieldset {
   width: 440px;
   margin: 0;
   padding: 0;
-
+  flex-wrap: wrap;
   list-style: none;
 
   outline: 1px solid green;/*временно для сетки*/
@@ -1005,9 +1005,104 @@ fieldset {
   width: 100%;
   min-height: 20px;
   margin-bottom: 58px;
-
+  justify-content: space-between;
   outline: 1px solid black;/*временно для сетки*/
 }
+.sort h3 {
+  padding: 0;
+  margin: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  text-transform: uppercase;
+  margin-top: 2px;
+
+}
+.sort ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 360px;
+}
+.sort-item {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #000000;
+  opacity: 0.3;
+  margin-right: 25px;
+}
+.sort-name {
+  margin-right: 50px;
+}
+.sort-bottom {
+  margin-right: 18px;
+}
+.sort-item:hover,
+.sort-item:focus {
+  opacity: 0.6;
+}
+.sort-item:active {
+  opacity: 1;
+}
+.sort-current {
+  opacity: 1;
+}
+.sort-bottom {
+  display: block;
+  width: 11px;
+  height:20px;
+  background-image: url("../img/icon-down-dir2.svg");
+  background-repeat: no-repeat;
+  background-position:center;
+  opacity: 0.2;
+}
+.sort-bottom:hover,
+.sort-bottom:focus {
+  background-image: url("../img/icon-down-dir2.svg");
+  background-repeat: no-repeat;
+  background-position:center;
+  opacity: 1;
+}
+.sort-bottom:active {
+  background-image: url("../img/icon-down-dir.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 1;
+}
+.sort-top {
+  display: block;
+  width: 11px;
+  height:20px;
+  background-image: url("../img/icon-up-dir2.svg");
+  background-repeat: no-repeat;
+  background-position:center;
+  opacity: 0.2;
+}
+.sort-top:hover,
+.sort-top:focus {
+  background-image: url("../img/icon-up-dir2.svg");
+  background-repeat: no-repeat;
+  background-position:center;
+  opacity: 1;
+}
+.sort-top:active {
+background-image: url("../img/icon-up-dir.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 1;
+}
+.sort-dir-current {
+  background-image: url("../img/icon-down-dir.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 1;
+}
+
 .labels {
   margin-bottom: 27px;
   outline: 1px solid black;/*временно для сетки*/
@@ -1385,7 +1480,7 @@ opacity: 0;
   align-items: center;
 }
 /*body {
-  background-image: url("../img/nerds-index.jpg");
+  background-image: url("../img/nerds-catalog.jpg");
   background-repeat: no-repeat;
   background-position: center 0;
 }
