@@ -1155,9 +1155,9 @@ background-image: url("../img/icon-up-dir.svg");
           align-items: center;
   bottom: 0;
   z-index: 1;
-
   width: 360px;
   min-height: 230px;
+  max-height: 576px;
 
   background-color: #eeeeee;
 }
@@ -1174,9 +1174,10 @@ background-image: url("../img/icon-up-dir.svg");
   margin-bottom: 25px;
 }
 .on-img-discription2 {
-  width: 200px;
+  width: 230px;
   text-align: center;
   margin-bottom: 33px;
+  overflow: auto;
 }
 .on-img-button {
   display: -webkit-box;
