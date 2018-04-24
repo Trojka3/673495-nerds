@@ -406,6 +406,7 @@ img {
   width: 1160px;
   min-height: 184px;
   margin-bottom: 80px;
+  flex-wrap: wrap;
   outline: 1px solid yellow;  /*временно для сетки*/
 }
 .partners::before {
@@ -512,7 +513,7 @@ img {
   padding-left: 100px;
   padding-right: 100px;
   padding-top: 70px;
-  box-shadow: 0 20px 40px 0 rgba(0, 1, 1, 0.75);
+  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.75);
   display: none;
 }
 .write-us-form {
@@ -956,9 +957,10 @@ fieldset {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  flex-direction: column;
   min-height: 145px;
   margin: 0;
   margin-bottom: 25px;
@@ -977,7 +979,7 @@ fieldset {
   margin: 0;
   margin-bottom: 29px;
   padding: 0;
-
+  flex-direction: column;
   outline: 1px solid brown;/*временно для сетки*/
 }
 .button-show {
@@ -1156,9 +1158,6 @@ fieldset {
   bottom: -2px;
   opacity: 0.4;
 }
-.feature-checkbox:checked + label::before {
-opacity: 0;
-}
 .catalog-form label:hover {
   color: #000000;
 }
@@ -1166,8 +1165,12 @@ opacity: 0;
 .catalog-form input + label:hover::before {
   opacity: 1;
 }
-.feature-checkbox:checked + label:hover::before {
-opacity: 0;
+.grid-option input:focus + label,
+.feature-option input:focus + label,
+.catalog-form input:focus + label::after,
+.catalog-form input:focus + label::before {
+  opacity: 1;
+  color: #000000;
 }
 .catalog-form input:disabled +label {
   color: #283136;
@@ -1180,7 +1183,10 @@ opacity: 0;
   opacity: 0.1;
 }
 .feature-checkbox:disabled:checked + label:hover::before,
-.feature-checkbox:disabled:checked + label::before {
+.feature-checkbox:disabled:checked + label::before,
+.feature-checkbox:checked + label::before,
+.feature-checkbox:checked:focus + label::before,
+.feature-checkbox:checked + label:hover::before {
 opacity: 0;
 }
 .grid ul {
@@ -1303,7 +1309,6 @@ opacity: 0;
   min-height: 416px;
   width: 100%;
   margin-bottom: 69px;
-  opacity: 0.3;
 }
 .contacts {
   position: absolute;
@@ -1316,8 +1321,6 @@ opacity: 0;
   box-sizing: border-box;
   top: 55px;
   padding-left: 50px;
-  outline: 1px solid red;
-  opacity: 0.4;
 }
 .contacts b {
   margin: 0;
@@ -1344,7 +1347,7 @@ opacity: 0;
   justify-content: center;
   align-items: center;
 }
-body {
+/*body {
   background-image: url("../img/nerds-index.jpg");
   background-repeat: no-repeat;
   background-position: center 0;
