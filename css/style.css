@@ -1100,13 +1100,50 @@ fieldset {
 .label-image {
   display: block;
 }
-.page-numbers {
+.paginator {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   min-height: 50px;
   outline: 1px solid red;/*временно для сетки*/
   margin-bottom: 60px;
+}
+.paginator a {
+  display: inline-block;
+  min-width: 50px;
+  height: 50px;
+  padding: 0 10px;
+  line-height: 50px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #000000;
+  background: #eeeeee;
+  border-radius: 3px;
+  margin-right: 11px;
+  box-sizing: border-box;
+  text-transform: uppercase;
+}
+.paginator a:hover,
+.paginator a:focus {
+  background: #dfdfdf;
+  box-shadow: none;
+}
+.paginator a:active {
+  background: #d5d5d5;
+  box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
+  color: rgba(0, 0, 0, 0.3);
+}
+.paginator .current-page,
+.paginator .current-page:hover,
+.paginator .current-page:focus {
+  background: #ffffff;
+  box-shadow:  0 0 0 3px rgba(219, 219, 219) inset;
+}
+.next-page {
+  min-width: 260px;
 }
 .feature legend {
   margin-bottom: 17px;
