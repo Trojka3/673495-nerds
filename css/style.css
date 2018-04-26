@@ -90,7 +90,7 @@ img {
 }
 .sliders {
   position: relative;
-
+  min-width: 1200px;
   min-height: 413px;
   margin-bottom: 80px;
   background-color: #eeeeee;
