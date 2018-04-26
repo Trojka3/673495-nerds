@@ -1,6 +1,4 @@
-l,
 body {
-  width: 1160px;
   min-height: 2476px;
   margin: 0 auto;
   padding: 0;
@@ -48,13 +46,22 @@ img {
   clip: rect(0 0 0 0);
 }
 .main-header {
+
+  position: relative;
+  min-width: 1200px;
   display: flex;
-  width: 100%;
+  justify-content: center;
   min-height: 132px;
   background-color: #eeeeee;
-
 }
 .header-navi {
+  position: relative;
+  box-sizing: border-box;
+  width: 1200px;
+  padding: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
   list-style: none;
   font-weight: 500;
   font-size: 16px;
@@ -72,26 +79,36 @@ img {
 .header-navi a:active {
   color: rgba(0, 0, 0, 0.3);
 }
-
+.main {
+  position: relative;
+  box-sizing: border-box;
+  width: 1200px;
+  padding: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
 .sliders {
   position: relative;
 
   min-height: 413px;
   margin-bottom: 80px;
-
-  outline: 1px solid red;/*временно для сетки*/
   background-color: #eeeeee;
 }
 .container {
+  position: relative;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: 1160px;
+  width: 1200px;
+  min-height: 413px;
   margin: 0 auto;
   padding: 0;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .slider-controls {
   position: absolute;
-  bottom: 104px;
+  bottom: 107px;
   left: 50%;
   z-index: 100;
 
@@ -114,7 +131,7 @@ img {
   width: 18px;
   height: 18px;
   padding: 8px;
-
+  vertical-align: middle;
   border-radius: 50%;
   cursor: pointer;
 }
@@ -140,7 +157,7 @@ img {
 .slider h2 {
   max-width: 600px;
   margin: 0;
-  margin-bottom: 7px;
+  margin-bottom: 25px;
 
   font-weight: 500;
   font-size: 55px;
@@ -149,28 +166,29 @@ img {
 .slider p {
   max-width: 430px;
   margin: 0;
-  margin-bottom: 38px;
-
+  margin-bottom: 40px;
   color: #283136;
 }
 .slider {
   display: none;
-  padding: 78px 0 0 0;
+  padding: 60px 0 0 0;
+  box-sizing: border-box;
+  min-height: 413px;
 }
 .slider:nth-child(1) {
   background-image: url("../img/slide1.png");
   background-repeat: no-repeat;
-  background-position: right 10px;
+  background-position: 93% 0;
 }
 .slider:nth-child(2) {
   background-image: url("../img/slide2.png");
   background-repeat: no-repeat;
-  background-position: 100% 18px;
+  background-position: 93% 0;
 }
 .slider:nth-child(3) {
   background-image: url("../img/slide3.png");
   background-repeat: no-repeat;
-  background-position: 93% 18px;
+  background-position: 93% 0;
 }
 #product-1:checked ~ .slider-list .slider:nth-child(1) {
   display: block;
@@ -202,7 +220,7 @@ img {
 .button-slider {
   display: block;
   width: 240px;
-  padding: 13px 0;
+  padding: 16px 0;
 
   font-size: 16px;
   line-height: 18px;
@@ -296,8 +314,6 @@ img {
   display: flex;
   width: 1160px;
   min-height: 527px;
-
-  outline: 1px solid red;/*временно для сетки*/
 }
 .about-us::before {
   content: "";
@@ -311,7 +327,6 @@ img {
   flex-direction: column;
   width: 700px;
   margin-right: 100px;
-  outline: 1px solid yellow; /*временно для сетки*/
 }
 .about-us-discription b {
   margin-top: 80px;
@@ -319,14 +334,12 @@ img {
   font-weight: 500;
   font-size: 45px;
   line-height: 45px;
-  outline: 1px solid yellow;  /*временно для сетки*/
 }
 .about-us-discription p {
   margin: 0;
   width: 660px;
   margin-bottom: 22px;
   color: #283136;
-  outline: 1px solid yellow;  /*временно для сетки*/
 }
 .about-us-discription h3 {
   font-size: 16px;
@@ -358,7 +371,6 @@ img {
   display: flex;
   flex-direction: column;
   width: 360px;
-  outline: 1px solid green;
 }
 .about-us-img-table img{
   margin-top: 42px;
@@ -587,10 +599,6 @@ img {
   outline: none;
   opacity: 0.1;
 }
-/*form input:invalid, form textarea:invalid {
-     border: none;
-     outline: 2px solid red;
-}*/
 .write-us-form input,
 .write-us-form textarea {
   border: 2px solid #d7dcde;
@@ -690,26 +698,27 @@ img {
 
   border-bottom: 2px solid #fb565a;
 }
+.catalog-title {
+  position: relative;
+  background-color: #eeeeee;
+}
 .catalog-main h1 {
+  position: relative;
+  width: 1200px;
+  padding: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
-
-  background-color: #eeeeee;
-  opacity: 0.4;  /*временно для сетки*/
   display: block;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: 1160px;
   min-height: 223px;
-  margin: 0;
   margin-bottom: 55px;
-  padding: 0;
   padding-top: 60px;
-
   text-align: center;
-
-  outline: 1px solid red; /*временно для сетки*/
 }
 .catalog-form legend {
   font-weight: 700;
@@ -746,7 +755,7 @@ img {
           box-shadow: inset 0 3px 3px 0 rgba(0, 1, 1, 0.1);
   opacity: 0.3;
 }
-fieldset {
+.catalog-container fieldset {
   border: 0;
 }
 .on-img-discription1 {
@@ -756,8 +765,8 @@ fieldset {
   color: #000000;
   text-transform: uppercase;
 
-  margin-top: 33px;
-  margin-bottom: 25px;
+  margin-top: 27px;
+  margin-bottom: 14px;
 }
 .on-img-discription2 {
   font-weight: 400;
@@ -768,16 +777,15 @@ fieldset {
   width: 200px;
   min-height: 40px;
   text-align: center;
-  margin-bottom: 33px;
+  margin-bottom: 27px;
+  max-height: 350px;
   overflow: auto;
 }
 .pink .on-img-discription2,
 .aplus .on-img-discription2,
 .kvast .on-img-discription2 {
   width: 230px;
-
 }
-
 .header-navi {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -794,15 +802,11 @@ fieldset {
   margin-top: 57px;
   margin-bottom: 10px;
   padding: 0;
-
-  outline: 1px solid green;/*временно для сетки*/
 }
 .main-header-logo {
   width: 160px;
   height: 65px;
   margin-top: -12px;
-
-  outline: 1px solid green;/*временно для сетки*/
 }
 .main-navi {
   display: -webkit-box;
@@ -816,15 +820,11 @@ fieldset {
   padding: 0;
   flex-wrap: wrap;
   list-style: none;
-
-  outline: 1px solid green;/*временно для сетки*/
 }
-
 .cart-block {
   width: 160px;
   margin: 0;
   padding: 0;
-
   text-align: right;
 }
 .cart-icon {
@@ -846,9 +846,6 @@ fieldset {
   width: 1100px;
   min-height: 347px;
   margin-bottom: 80px;
-
-
-  outline: 1px solid black;/*временно для сетки*/
 }
 .product {
   display: -webkit-box;
@@ -860,8 +857,6 @@ fieldset {
           flex-direction: column;
   width: 300px;
   min-height: 0;
-
-  outline: 1px solid blue;/*временно для сетки*/
 }
 .products img {
   -webkit-box-ordinal-group: 0;
@@ -871,13 +866,9 @@ fieldset {
 .products p {
   width: 260px;
   margin-bottom: 33px;
-
-  outline: 1px solid black; /*временно для сетки*/
 }
 .products h3 {
   margin-bottom: 0;
-
-  outline: 1px solid green; /*временно для сетки*/
 }
 .product .button {
   display: -webkit-box;
@@ -893,6 +884,13 @@ fieldset {
   min-height: 50px;
 }
 .footer-bottom {
+  position: relative;
+  box-sizing: border-box;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+  padding-right: 20px;
+  padding-left: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -900,7 +898,6 @@ fieldset {
       -ms-flex-align: center;
           align-items: center;
   height: 80px;
-  outline: 1px solid black; /*временно для сетки*/
 }
 .social-buttons ul {
   display: -webkit-box;
@@ -912,8 +909,6 @@ fieldset {
   width: 260px;
   margin-right: 140px;
   padding: 0;
-
-  outline: 1px solid black; /*временно для сетки*/
 }
 .social-button {
   display: flex;
@@ -926,21 +921,23 @@ fieldset {
 
   border: none;
   border-radius: 40px;
-  outline: 1px solid black; /*временно для сетки*/
 }
 .discount {
   width: 560px;
   padding-top: 3px;
-
-  outline: 1px solid green; /*временно для сетки*/
 }
 .catalog-container {
+  position: relative;
+  box-sizing: border-box;
+  width: 1200px;
+  padding: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   min-height: 2110px;
-
-  outline: 1px solid yellow; /*временно для сетки*/
 }
 .catalog-form {
   display: -webkit-box;
@@ -952,16 +949,12 @@ fieldset {
           flex-direction: column;
   width: 260px;
   margin-right: 140px;
-
-  outline: 1px solid yellow; /*временно для сетки*/
 }
 .price {
   min-height: 210px;
   margin: 0;
   margin-bottom: 54px;
   padding: 0;
-
-  outline: 1px solid red;/*временно для сетки*/
 }
 .grid {
   display: -webkit-box;
@@ -978,8 +971,6 @@ fieldset {
   margin: 0;
   margin-bottom: 25px;
   padding: 0;
-
-  outline: 1px solid yellow;/*временно для сетки*/
 }
 .feature {
   display: -webkit-box;
@@ -993,7 +984,6 @@ fieldset {
   margin-bottom: 29px;
   padding: 0;
   flex-direction: column;
-  outline: 1px solid brown;/*временно для сетки*/
 }
 .button-show {
   min-height: 50px;
@@ -1008,8 +998,6 @@ fieldset {
           flex-direction: column;
   width: 760px;
   min-height: 2100px;
-
-  outline: 1px solid red;/*временно для сетки*/
 }
 .sort {
   display: -webkit-box;
@@ -1019,7 +1007,6 @@ fieldset {
   min-height: 20px;
   margin-bottom: 54px;
   justify-content: space-between;
-  outline: 1px solid black;/*временно для сетки*/
 }
 .sort h3 {
   padding: 0;
@@ -1029,7 +1016,6 @@ fieldset {
   line-height: 18px;
   text-transform: uppercase;
   margin-top: 2px;
-
 }
 .sort ul {
   padding: 0;
@@ -1115,10 +1101,8 @@ background-image: url("../img/icon-up-dir.svg");
   background-position: center;
   opacity: 1;
 }
-
 .labels {
   margin-bottom: 27px;
-  outline: 1px solid black;/*временно для сетки*/
 }
 .labels-list {
   display: -webkit-box;
@@ -1136,10 +1120,7 @@ background-image: url("../img/icon-up-dir.svg");
           align-items: flex-start;
   margin: 0;
   padding: 0;
-
   list-style: none;
-
-  outline: 1px solid blue;/*временно для сетки*/
 }
 .labels-list li {
   position: relative;
@@ -1147,7 +1128,6 @@ background-image: url("../img/icon-up-dir.svg");
   min-height: 616px;
   padding: 0;
   margin-bottom: 33px;
-  outline: 1px solid green;/*временно для сетки*/
 }
 .labels-list li .browser {
   opacity: 0.12;
@@ -1169,9 +1149,8 @@ background-image: url("../img/icon-up-dir.svg");
   bottom: 0;
   z-index: 1;
   width: 360px;
-  min-height: 230px;
+  min-height: 150px;
   max-height: 576px;
-
   background-color: #eeeeee;
 }
 .labels-list li:hover {
@@ -1216,7 +1195,6 @@ background-image: url("../img/icon-up-dir.svg");
   display: -ms-flexbox;
   display: flex;
   min-height: 50px;
-  outline: 1px solid red;/*временно для сетки*/
   margin-bottom: 60px;
 }
 .paginator a {
@@ -1275,7 +1253,6 @@ background-image: url("../img/icon-up-dir.svg");
 .feature-option {
   margin-bottom: 20px;
   padding-left: 36px;
-  outline: 1px solid red;/*временно для сетки*/
 }
 .catalog-form label {
   color: #283136;
@@ -1353,7 +1330,6 @@ opacity: 0;
 .grid-option {
   margin-bottom: 20px;
   padding-left: 36px;
-  outline: 1px solid blue;/*временно для сетки*/
 }
 .grid legend {
   margin-bottom: 15px;
@@ -1437,6 +1413,7 @@ opacity: 0;
 }
 .price-controls label {
   display: inline-block;
+  vertical-align: middle;
   width: 50%;
   font-size: 16px;
   text-transform: uppercase;
@@ -1459,6 +1436,10 @@ opacity: 0;
 }
 .main-footer {
   position: relative;
+  box-sizing: border-box;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0;
 }
 .map {
   display: flex;
@@ -1479,6 +1460,7 @@ opacity: 0;
   background-color: #ffffff;
   box-sizing: border-box;
   top: 55px;
+  left: 20px;
   padding-left: 50px;
 }
 .contacts b {
@@ -1514,8 +1496,8 @@ opacity: 0;
 .contacts-button span {
   outline: 1px solid black;  /*временно для сеток*/
 }
-
-/*body {
+/*
+body {
   background-image: url("../img/nerds-catalog.jpg");
   background-repeat: no-repeat;
   background-position: center 0;
