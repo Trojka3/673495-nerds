@@ -480,6 +480,20 @@ img {
   line-height: 18px;
   color: #283136;
 }
+.contacts .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 220px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
 .social-buttons li {
   list-style: none;
 }
@@ -704,7 +718,7 @@ img {
 }
 .catalog-main h1 {
   position: relative;
-  width: 1200px;
+  min-width: 1200px;
   padding: 0;
   padding-left: 20px;
   padding-right: 20px;
@@ -1162,13 +1176,12 @@ background-image: url("../img/icon-up-dir.svg");
   opacity: 1;
 }
 .on-img-button {
-  /*display: -webkit-box;
-  display: -ms-flexbox;*/
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 200px;
-  min-height: 50px;
+  padding-top: 16px;
+  padding-bottom: 16px;
  /* -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1480,24 +1493,8 @@ opacity: 0;
 .contacts p:last-of-type {
   margin-bottom: 38px;
 }
-.contacts .button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 220px;
-  min-height: 50px;
-}
-.contacts-button span {
-  outline: 1px solid black;  /*временно для сеток*/
-}
-/*
-body {
+
+/*body {
   background-image: url("../img/nerds-catalog.jpg");
   background-repeat: no-repeat;
   background-position: center 0;
