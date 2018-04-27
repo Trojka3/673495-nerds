@@ -909,6 +909,7 @@ img {
 }
 
 .catalog-title {
+  min-width: 1200px;
   position: relative;
   background-color: #eeeeee;
 }
