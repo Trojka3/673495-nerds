@@ -314,7 +314,7 @@ img {
 }
 
 .button:active {
-  color: rgb(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.3);
 
   background-color: #d7373b;
   -webkit-box-shadow: inset 0 3px rgba(0, 1, 1, 0.1);
@@ -331,7 +331,7 @@ img {
 }
 
 .button-green:active {
-  color: rgb(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.3);
 
   background-color: #00aa62;
   -webkit-box-shadow: inset 0 3px 3px 0 rgba(0, 1, 1, 0.1);
@@ -348,7 +348,7 @@ img {
 }
 
 .button-yellow:active {
-  color: rgb(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.3);
 
   background-color: #e5a722;
   -webkit-box-shadow: inset 0 3px 3px 0 rgba(0, 1, 1, 0.1);
@@ -631,7 +631,6 @@ img {
   font-weight: 700;
   font-size: 36px;
   line-height: 36px;
-  line-height: 0.9;
 }
 
 .discount span {
@@ -723,7 +722,7 @@ img {
 }
 
 .write-us-form .button-submit:active {
-  color: rgb(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.3);
   border: none;
   background-color: #d7373b;
   -webkit-box-shadow: inset 0 3px 3px 0 rgba(0, 1, 1, 0.1);
@@ -1043,6 +1042,14 @@ img {
   list-style: none;
 }
 
+
+
+/*
+.main-navi li:last-child::after {
+  content: "";
+  margin-right: auto;
+} */
+
 .cart-block {
   width: 160px;
   margin: 0;
@@ -1199,6 +1206,10 @@ img {
   margin: 0;
   margin-bottom: 54px;
   padding: 0;
+}
+
+.price legend {
+  letter-spacing: 0.05em;
 }
 
 .grid {
@@ -1483,6 +1494,8 @@ img {
   display: flex;
   min-height: 50px;
   margin-bottom: 60px;
+  align-content: flex-start;
+  flex-wrap: wrap;
 }
 
 .paginator a {
@@ -1762,7 +1775,7 @@ img {
   position: relative;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  width: 1200px;
+  width: 1440px;
   margin: 0 auto;
   padding: 0;
 }
@@ -1774,6 +1787,7 @@ img {
   min-height: 416px;
   width: 100%;
   margin-bottom: 69px;
+  background-color: #e9e5dc;
 }
 
 .map a {
@@ -1798,6 +1812,14 @@ img {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   top: 55px;
-  left: 20px;
+  left: 140px;
   padding-left: 50px;
+}
+
+
+
+body {
+  background-image: url("../img/nerds-catalog.jpg");
+  background-repeat: no-repeat;
+  background-position: center 0;
 }
