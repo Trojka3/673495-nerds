@@ -6,7 +6,7 @@
   <title>Дизайн-студия "Нёрдс"</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/styleminified.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -159,13 +159,16 @@
     </div>
   </main>
   <footer class="main-footer">
+    <div class="inter-map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.59910436516!2d30.320894616030944!3d59.93879418187623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1525032122076" width="100%" height="416" frameborder="0" allowfullscreen></iframe>
+    </div>
     <section class="map">
       <h2 class="visually-hidden">Карта</h2>
       <div class="contacts-container">
         <div class="contacts" id="contacts">
           <b>Nёrds design studio</b>
           <p>
-            191186, Санкт-Петербург ул. Б.Конюшенная, д. 19.8
+            191186, Санкт-Петербург ул. Б.Конюшенная, д. 19/8
           </p>
           <p> тел. +7 (812) 275-75-75
           </p>
@@ -208,25 +211,28 @@
       <div class="write-us-top">
         <div>
           <label for="name">Ваше имя:</label>
-          <input type="text" id="name" name="name" placeholder="Имя Фамилия" required>
+          <input type="text" id="name" name="name" placeholder="Имя Фамилия">
         </div>
         <div>
           <label for="email">Ваш e-mail:</label>
-          <input type="email" id="email" name="email" placeholder="email@example.com" required>
+          <input type="email" id="email" name="email" placeholder="email@example.com">
         </div>
       </div>
       <div>
         <label for="letter">Текст письма:</label>
-        <textarea name="letter" id="letter" rows="3" placeholder="В свободной форме" required></textarea>
+        <textarea name="letter" id="letter" rows="3" placeholder="В свободной форме"></textarea>
       </div>
       <button type="submit" name="submit" class="button button-submit">Отправить
       </button>
       <button type="button" name="close" class="button-x">
-        <span class="visually-hidden">Закрыть форму</span>
-        <img src="img/close-cross.svg" height="21" width="21" alt="close-cross">
+        <a href="index.html">
+          <span class="visually-hidden">Закрыть форму</span>
+          <img src="img/close-cross.svg" height="21" width="21" alt="close-cross">
+        </a>
       </button>
     </form>
   </section>
+  <script src="js/code.js"></script>
 </body>
 
 </html>
